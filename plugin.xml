@@ -15,10 +15,11 @@
 	<!-- android -->
 	<platform name="android">
 		<preference name="ANDROID_PATH_PREFIX" default="/" />
-		<preference name="ANDROID_2_PATH_PREFIX" default="/" />
 		<preference name="ANDROID_3_PATH_PREFIX" default="/" />
 		<preference name="ANDROID_4_PATH_PREFIX" default="/" />
 		<preference name="ANDROID_5_PATH_PREFIX" default="/" />
+		<preference name="ANDROID_6_PATH_PREFIX" default="/" />
+		<preference name="ANDROID_7_PATH_PREFIX" default="/" />
 
 		<preference name="DEEPLINK_2_SCHEME" default=" " />
 		<preference name="DEEPLINK_2_HOST" default=" " />
@@ -28,6 +29,12 @@
 		<preference name="DEEPLINK_4_HOST" default=" " />
 		<preference name="DEEPLINK_5_SCHEME" default=" " />
 		<preference name="DEEPLINK_5_HOST" default=" " />
+		<preference name="DEEPLINK_6_SCHEME" default=" " />
+		<preference name="DEEPLINK_6_HOST" default=" " />
+		<preference name="DEEPLINK_7_SCHEME" default=" " />
+		<preference name="DEEPLINK_7_HOST" default=" " />
+
+		<preference name="ANDROID_2_PATH_PATTERN" default="/" />
 
 		<js-module src="www/deeplink.js" name="deeplink">
 			<runs/>
@@ -55,6 +62,7 @@
 				<data android:scheme="$DEEPLINK_SCHEME" />
 				<data  android:host="$DEEPLINK_HOST" />
 				<data android:pathPrefix="$ANDROID_PATH_PREFIX"/>
+				
 			</intent-filter>
 			<intent-filter android:autoVerify="true">
 				<action android:name="android.intent.action.VIEW" />
@@ -62,7 +70,8 @@
 				<category android:name="android.intent.category.BROWSABLE" />
 				<data android:scheme="$DEEPLINK_2_SCHEME" />
 				<data android:host="$DEEPLINK_2_HOST" />
-				<data android:pathPrefix="$ANDROID_2_PATH_PREFIX" />
+				
+				<data android:pathPattern="$ANDROID_2_PATH_PATTERN"/>
 			</intent-filter>
 			<intent-filter android:autoVerify="true">
 				<action android:name="android.intent.action.VIEW" />
@@ -71,6 +80,7 @@
 				<data android:scheme="$DEEPLINK_3_SCHEME" />
 				<data android:host="$DEEPLINK_3_HOST" />
 				<data android:pathPrefix="$ANDROID_3_PATH_PREFIX" />
+			
 			</intent-filter>
 			<intent-filter android:autoVerify="true">
 				<action android:name="android.intent.action.VIEW" />
@@ -79,6 +89,7 @@
 				<data android:scheme="$DEEPLINK_4_SCHEME" />
 				<data android:host="$DEEPLINK_4_HOST" />
 				<data android:pathPrefix="$ANDROID_4_PATH_PREFIX" />
+				
 			</intent-filter>
 			<intent-filter android:autoVerify="true">
 				<action android:name="android.intent.action.VIEW" />
@@ -87,6 +98,25 @@
 				<data android:scheme="$DEEPLINK_5_SCHEME" />
 				<data android:host="$DEEPLINK_5_HOST" />
 				<data android:pathPrefix="$ANDROID_5_PATH_PREFIX" />
+			
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="$DEEPLINK_6_SCHEME" />
+				<data android:host="$DEEPLINK_6_HOST" />
+				<data android:pathPrefix="$ANDROID_6_PATH_PREFIX" />
+		
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="$DEEPLINK_7_SCHEME" />
+				<data android:host="$DEEPLINK_7_HOST" />
+				<data android:pathPrefix="$ANDROID_7_PATH_PREFIX" />
+		
 			</intent-filter>
 			<!-- <intent-filter android:autoVerify="true">
 				<action android:name="android.intent.action.VIEW" />
