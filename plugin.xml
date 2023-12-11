@@ -20,7 +20,7 @@
 		<preference name="ANDROID_5_PATH_PREFIX" default="/" />
 		<preference name="ANDROID_6_PATH_PREFIX" default="/" />
 		<preference name="ANDROID_7_PATH_PREFIX" default="/" />
-
+		<preference name="ANDROID_8_PATH_PREFIX" default="/" />
 		<preference name="DEEPLINK_2_SCHEME" default=" " />
 		<preference name="DEEPLINK_2_HOST" default=" " />
 		<preference name="DEEPLINK_3_SCHEME" default=" " />
@@ -33,7 +33,8 @@
 		<preference name="DEEPLINK_6_HOST" default=" " />
 		<preference name="DEEPLINK_7_SCHEME" default=" " />
 		<preference name="DEEPLINK_7_HOST" default=" " />
-
+		<preference name="DEEPLINK_8_SCHEME" default=" " />
+		<preference name="DEEPLINK_8_HOST" default=" " />
 		<preference name="ANDROID_2_PATH_PATTERN" default="/" />
 
 		<js-module src="www/deeplink.js" name="deeplink">
