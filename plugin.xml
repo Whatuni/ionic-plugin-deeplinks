@@ -142,7 +142,7 @@
 				<data android:pathPrefix="$ANDROID_9_PATH_PREFIX" />
 		
 			</intent-filter>
-			<intent-filter android:autoVerify="true">
+			<!-- <intent-filter android:autoVerify="true">
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
@@ -150,7 +150,7 @@
 				<data android:host="$DEEPLINK_10_HOST" />
 				<data android:pathPrefix="$ANDROID_10_PATH_PREFIX" />
 		
-			</intent-filter>
+			</intent-filter> -->
 			<!-- <intent-filter android:autoVerify="true">
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.DEFAULT" />
