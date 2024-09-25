@@ -38,8 +38,7 @@
 		<preference name="DEEPLINK_8_HOST" default=" " />
 		<preference name="DEEPLINK_9_SCHEME" default=" " />
 		<preference name="DEEPLINK_9_HOST" default=" " />
-		<preference name="DEEPLINK_10_SCHEME" default=" " />
-		<preference name="DEEPLINK_10_HOST" default=" " />
+		
 		<preference name="ANDROID_2_PATH_PATTERN" default="/" />
 
 		<js-module src="www/deeplink.js" name="deeplink">
